@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"></meta>
+	<title>Learning Twitch API</title>
+	<!--
+		The order of these scripts is important. jQuery MUST be loaded BEFORE the twitch api.
+		The twitch api is DEPENDENT on jQuery in order to function properly and will throw 
+		undefined exceptions if loaded before jQuery.
+	-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ttv-api.s3.amazonaws.com/twitch.min.js"></script>
+	<script type="text/javascript" src="scripts/login.js"></script>
+</head>
+<body>
+	<img src="http://ttv-api.s3.amazonaws.com/assets/connect_dark.png" class="twitch-connect" href="#" />
+	<button class="logout">Log out of twitch</button>
+	<span class="loginStatus"></span>
+</body>
+</html>
